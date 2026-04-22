@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jelu — Wind Your Saurgenien</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===================== NAV ===================== -->
+  <nav class="navbar">
+    <div class="nav-logo">Jelu<span class="logo-dot">✦</span></div>
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">See Mixture</a></li>
+      <li><a href="#">Cases</a></li>
+      <li><a href="#">Wellness</a></li>
+      <li><a href="#" class="nav-cta">Install</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ===================== HERO BANNER / CAROUSEL ===================== -->
+  <section class="hero-section" id="hero">
+    <div class="carousel" id="carousel">
+
+      <!-- Slide 1 -->
+      <div class="carousel-slide active">
+        <div class="slide-bg slide-bg-1"></div>
+        <div class="slide-content">
+          <div class="slide-text">
+            <span class="slide-tag">Fresh & Natural</span>
+            <h1 class="slide-title">Wind Your<br><em>Saurgenien</em></h1>
+            <p class="slide-desc">Discover wholesome meals crafted with care, rooted in nature's finest ingredients for a healthier everyday life.</p>
+            <a href="#" class="btn-primary">Get Started <span>→</span></a>
+          </div>
+          <div class="slide-image">
+            <div class="img-blob img-blob-1">
+              <img src="a1.png" alt="Fresh salad bowl" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="carousel-slide">
+        <div class="slide-bg slide-bg-2"></div>
+        <div class="slide-content">
+          <div class="slide-text">
+            <span class="slide-tag">Seasonal Picks</span>
+            <h1 class="slide-title">Nourish Your<br><em>Body & Soul</em></h1>
+            <p class="slide-desc">Every plate tells a story of balance, flavor, and wellness. Explore our curated seasonal menus today.</p>
+            <a href="#" class="btn-primary">Explore Now <span>→</span></a>
+          </div>
+          <div class="slide-image">
+            <div class="img-blob img-blob-2">
+              <img src="b1.jpg" alt="Healthy bowl" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="carousel-slide">
+        <div class="slide-bg slide-bg-3"></div>
+        <div class="slide-content">
+          <div class="slide-text">
+            <span class="slide-tag">Plant Powered</span>
+            <h1 class="slide-title">Eat Clean,<br><em>Live Better</em></h1>
+            <p class="slide-desc">Plant-based goodness for every lifestyle. Simple, delicious, and made with ingredients you can trust.</p>
+            <a href="#" class="btn-primary">Discover More <span>→</span></a>
+          </div>
+          <div class="slide-image">
+            <div class="img-blob img-blob-3">
+              <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=600&q=80" alt="Plant based meal" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Carousel Controls -->
+    <div class="carousel-controls">
+      <button class="carousel-btn prev" id="prevBtn" aria-label="Previous">‹</button>
+      <div class="carousel-dots" id="carouselDots">
+        <span class="dot active" data-index="0"></span>
+        <span class="dot" data-index="1"></span>
+        <span class="dot" data-index="2"></span>
+      </div>
+      <button class="carousel-btn next" id="nextBtn" aria-label="Next">›</button>
+    </div>
+
+    <!-- Progress Bar -->
+    <div class="carousel-progress">
+      <div class="progress-bar" id="progressBar"></div>
+    </div>
+  </section>
+
+  <!-- ===================== QUICK LINKS STRIP ===================== -->
+  <section class="quick-links-section">
+    <div class="quick-links-container">
+      <a href="#" class="quick-link">
+        <span class="ql-icon">🥗</span>
+        <div>
+          <p class="ql-label">Recipe Templates</p>
+          <strong>Best Chia-gained Nutrients</strong>
+        </div>
+        <span class="ql-arrow">→</span>
+      </a>
+      <div class="ql-divider"></div>
+      <a href="#" class="quick-link">
+        <span class="ql-icon">🌿</span>
+        <div>
+          <p class="ql-label">Meal Tracker</p>
+          <strong>Eats On The GO</strong>
+        </div>
+        <span class="ql-arrow">→</span>
+      </a>
+      <div class="ql-divider"></div>
+      <a href="#" class="quick-link">
+        <span class="ql-icon">🫙</span>
+        <div>
+          <p class="ql-label">Plant-Based Series</p>
+          <strong>Start-based Powders</strong>
+        </div>
+        <span class="ql-arrow">→</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- ===================== WHAT IS & CAF SECTION ===================== -->
+  <section class="about-section" id="about">
+    <div class="about-container">
+      <div class="section-header">
+        <h2>What IS &amp; CAF Wicked!</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text">
+          <h3 class="about-subtitle">Talenforter</h3>
+          <p>Technically grounding, fresh and nourishing — the science of plant-based foods where each bite fills you with energy, elevating health and helping metabolism function through balance, allowing deep change that supports active wellbeing and a proper nutrition intake.</p>
+          <a href="#" class="btn-secondary">More Info <span>→</span></a>
+        </div>
+        <div class="about-image">
+          <div class="about-img-wrap">
+            <img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=600&q=80" alt="Food preparation" />
+            <div class="about-img-badge">
+              <span>100%</span>
+              <p>Natural</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FEATURE CARDS ===================== -->
+  <section class="cards-section" id="features">
+    <div class="cards-container">
+
+      <div class="feature-card" data-delay="0">
+        <div class="card-icon">🌱</div>
+        <h4>Daily Powerful Seeds</h4>
+        <p>Authentic plant-sourced compounds that nourish the whole system naturally and build lasting vitality.</p>
+        <a href="#" class="card-link">Care righteous thing <span>↓</span></a>
+      </div>
+
+      <div class="feature-card" data-delay="150">
+        <div class="card-icon">⚖️</div>
+        <h4>Subtly Extreme &amp; Well-Balanced</h4>
+        <p>Our specially crafted blends are thoughtfully balanced to achieve perfect harmony between taste and function.</p>
+        <a href="#" class="card-link">Gently nourish life <span>↓</span></a>
+      </div>
+
+      <div class="feature-card" data-delay="300">
+        <div class="card-icon">🌾</div>
+        <h4>Real Macro Nutrients</h4>
+        <p>Properly processed to only include plant-forward natural elements essential for your best performance.</p>
+        <a href="#" class="card-link">Harness whole plants <span>↓</span></a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================== INTERACTIVE BOTTOM BANNER ===================== -->
+  <section class="bottom-banner-section" id="cta">
+    <div class="bottom-banner-container">
+      <div class="bottom-banner-text">
+        <p class="banner-eyebrow">m'/ Inter Cin iô</p>
+        <h2>Start Your Wellness Journey Today</h2>
+        <p class="banner-sub">Join thousands living healthier, happier lives with our plant-powered community.</p>
+        <div class="banner-actions">
+          <a href="#" class="btn-primary">Get Started Now</a>
+          <a href="#" class="btn-outline">Learn More</a>
+        </div>
+      </div>
+      <div class="banner-stats">
+        <div class="stat">
+          <span class="stat-num" data-target="1148">0</span>
+          <p>Recipes</p>
+        </div>
+        <div class="stat-icon">🏠</div>
+        <div class="stat">
+          <span class="stat-num" data-target="38">0</span><span class="stat-suffix">k</span>
+          <p>Members</p>
+        </div>
+        <div class="stat-icon">⭐</div>
+        <div class="stat">
+          <span class="stat-num" data-target="110">0</span>
+          <p>Meals</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <p class="footer-logo">Jelu<span>✦</span></p>
+      <p class="footer-copy">© 2025 Jelu Wellness. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
